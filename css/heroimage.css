@@ -1,3 +1,7 @@
+*{
+    max-width: 100%;
+}
+
 .heroimage{
     width: 100svh;
     height: 100dvh;
@@ -10,17 +14,18 @@
 }
 
 .heroimage video {
-    margin: auto;
+  
     width: 450px;
     height: 450px;
     margin-bottom: 0;
+    margin-top: 0;
   
     
 }
 
 .no-music{
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     display: flex;
     justify-content: flex-end;
     margin-left: auto;
@@ -29,12 +34,29 @@
 .go-home{
     display: flex;
     align-items: flex-end;
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
 }
 
-.heroimage h2{
-    font-size: 22px;
+.heroimage p{
+   font-size: 16px;
     margin: 0;
 
+}
+
+main img{
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+main p{
+border: 10px;
+border-radius: 5px;
+background-color: rgba(142, 209, 213, 0.6);
+color: black;
+max-width: 100%;
+font-size: 16px;
+text-align: center;
+padding: 10px;
+margin: 5px;
 }

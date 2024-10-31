@@ -1,0 +1,40 @@
+.heroimage{
+    width: 100svh;
+    height: 100dvh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.heroimage video {
+    margin: auto;
+    width: 450px;
+    height: 450px;
+    margin-bottom: 0;
+  
+    
+}
+
+.no-music{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+}
+
+.go-home{
+    display: flex;
+    align-items: flex-end;
+    width: 50px;
+    height: 50px;
+}
+
+.heroimage h2{
+    font-size: 22px;
+    margin: 0;
+
+}

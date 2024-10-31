@@ -46,3 +46,14 @@
     transform: scale(1.1);
 }
 
+
+@media (min-width: 1024px) {
+    .contenedores{
+        display: flex;
+        
+    }
+
+    .contenedores div{
+        
+    }
+}

@@ -2,6 +2,12 @@
     max-width: 100%;
 }
 
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .contenedores{
     max-width: 80%;
     height: auto;
@@ -10,13 +16,14 @@
     margin: 30px;
     padding: 25px;
     display: flex; 
-    flex-direction: column; 
+    flex-direction: column;
 }
 
 .contenedores iframe{
     max-width: 100%;
     height: 250px;
     border-radius: 10px;
+    
 }
 
 .contenedores h2{
@@ -37,8 +44,8 @@
     border: none;
     border-radius: 5px;
     margin-top: 10px; 
-    align-self: flex-end;
     cursor: pointer;
+    float: right;
 }
 
 .contenedores button:hover {
@@ -47,13 +54,11 @@
 }
 
 
-@media (min-width: 1024px) {
+@media (min-width: 1024px){
     .contenedores{
         display: flex;
-        
-    }
-
-    .contenedores div{
-        
+        flex-direction: row;
+        gap: 25PX;
+        align-items: center; 
     }
 }

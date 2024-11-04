@@ -3,6 +3,9 @@
 <head>
 
     <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Neucha&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,7 +16,7 @@
 <body>
     <header>
         <div>
-            <video src="/assets/Video/Animation_Principal.mp4" controls></video>
+            <video src="" controls></video>
             <img src="/assets/icons/no-music.png" alt="Stop music">
             <div>
                 <a href="#main">
@@ -21,55 +24,36 @@
                 </a>
             </div>
         </div>
-        <nav>
-            <img src="assets/images/Captura_desde_2024-10-29_12-49-27-removebg-preview(1).png" alt="This is the Ding Dom banner ">
-            <a href="index.html">HOME</a>
-            <a href="views/instrument.html">INSTRUMENTS</a>
-            <a href="views/about-us.html">ABOUT US</a>
-        </nav>
+        <div class="contenedor">
+            <img id="logo" src="assets/images/Captura_desde_2024-10-29_13-09-01-removebg-preview.png" alt="This is the Ding Dom banner ">
+           <button class="abrir-menu"> <img src="assets/icons/icons8-menu-96.png" alt="amburguesa"></button>
+            <nav class="nav" id="nav">
+                <button id="cerrar"><img src="assets/icons/icons8-x-64.png" alt="x"></button>
+                <ul class="nav-list">
+                  <li><a href="index.html">HOME</a></li>
+                  <li><a href="views/instrument.html">INSTRUMENTS</a></li>
+                  <li><a href="views/about-us.html">ABOUT US</a></li>
+               </ul>
+            </nav> 
+        </div>
+        
     </header>
     <main>
         <img src="" alt="">
-        <h2>We are the Digital World team, a multidisciplinary group passionate about technology and creativity.</h2>
+        <h1>We are the Digital World team, a multidisciplinary group passionate about technology and creativity.</h1>
     </main>
 
-    <aside>
-        <h1>INSTRUMENT GALLERY</h1>
-
-
-    <div>
-        <img src="assets/images/pngtree-piano-icon-vector-png-image_5941830-removebg-preview-removebg-preview(1).png" alt="piano">
-        <p>The piano, with its 24 keys, turns beats into captivating melodies.¡An instrument full of magic!</p>
-        <button>GO</button>
-    </div>
-
-
-    <div>
-        <img src="assets/images/drum-icon-music-drums-symbol-260nw-2259865115-removebg-preview-removebg-preview.png" alt="drums set">
-        <p>The drums, with their powerful rhythm, set the pulse of the music.Its rhythm creates energy and emotion, ¡essential for the beat!</p>
-        <button>GO</button>
-    </div>
-
-
-    <div>
-        <img src="assets/images/Captura_desde_2024-10-30_11-34-45-removebg-preview.png" alt="guitar">
-        <p>The guitar, with its vibrant strings, creates melodies that resonate in the heart. ¡An instrument full of passion!</p>
-        <button>GO</button>
-    </div>
-
-
-    </aside>
-
-
-
-
-    
     <footer>
-        <p>© 2024 Ding Dom. Todos los derechos reservados.</p>
-        <a href="https://es-es.facebook.com/" target="_blank"><img src="assets/icons/icons8-facebook-48.png" alt="Icon facebook"></a>
-        <a href="https://www.instagram.com/" target="-blank"><img src="assets/icons/icons8-instagram-48.png" alt="Icon instagram"></a>
-        <a href="https://x.com/?lang=en" target="_blank"><img src="assets/icons/icons8-x-50.png" alt="Icon x"></a>
+        <p class="iconos-mover">
+        <a href="https://es-es.facebook.com/" target="_blank"><img src="assets/icons/icons8-facebook-48(1).png" alt="Icon facebook"></a>
+        <a href="https://www.instagram.com/" target="-blank"><img src="assets/icons/icons8-instagram-48(1).png" alt="Icon instagram"></a>
+        <a href="https://x.com/?lang=en" target="_blank"><img src="assets/icons/icons8-x-50.png" alt="Icon x"></a>    
+        </p>
+        <p class="parrafo-footer">© 2024 Ding Dom. Todos los derechos reservados.</p>
+
     </footer>
+        
+    <script src="js/index.js"></script>
 
 </body>
 </html>

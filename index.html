@@ -18,17 +18,22 @@
             
             <video  src="/assets/Video/Animation_Principal.mp4" autoplay muted loop ></video>
             <p> music is what moves us</p>
-            <img class="no-music" src="/assets/icons/no-music.png" alt="Stop music">
+            
+            <audio id="audioPlayer" autoplay preload loop>
+                <source src="assets/sounds/hayunamigoenmi.m4a" type="audio/mpeg">
+            </audio>
+    
+              <img class="no-music" src="/assets/icons/no-music.png" alt="Stop music" id="playButton">
             
             <div>
                 <a href="#main">
-                    <img class="go-home" src="/assets/icons/chevron-down.png" alt="go to">
+                  <a href="#botonhome"><img class="go-home" src="/assets/icons/chevron-down.png" alt="go to"></a> 
                 </a>
             </div>
         </div>
 
         <nav>
-            <img src="assets/images/Captura_desde_2024-10-29_12-49-27-removebg-preview(1).png" alt="This is the Ding Dom banner ">
+         <div id="botonhome"><img src="assets/images/Captura_desde_2024-10-29_12-49-27-removebg-preview(1).png" alt="This is the Ding Dom banner "></div>
             <a href="index.html">HOME</a>
             <a href="views/instrument.html">INSTRUMENTS</a>
             <a href="views/about-us.html">ABOUT US</a>
@@ -78,6 +83,6 @@
         <a href="https://www.instagram.com/" target="-blank"><img src="assets/icons/icons8-instagram-48.png" alt="Icon instagram"></a>
         <a href="https://x.com/?lang=en" target="_blank"><img src="assets/icons/icons8-x-50.png" alt="Icon x"></a>
     </footer>
-
+<script src="js/heroimage.js"></script>
 </body>
 </html>

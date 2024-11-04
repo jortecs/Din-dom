@@ -4,8 +4,7 @@
 
 Trabajaremos en crear una web para  una escuela de música online, con el plus de que los usuarios van a poder practicar con algunos de los instrumentos porque estos van a reproducir sonidos con click o con pulsaciones de teclado. La Escuela de música quiere ver las ofertas de diferentes grupos de desarrolladores para ver con cuál decide quedarse.
 
-## Contexto del proyecto
-
+## Contexto del proyect
 La tecnología ha permitido que se puedan migrar a la virtualidad muchas de las actividades que eran estrictamente presenciales, entre esas la educación, y en este caso puntual, las escuelas de música.
 
 Desarrolla una aplicación web para la escuela de música "**DING DOM**", en la que los usuarios pueden acceder al instrumento de su preferencia y practicar en él de forma didáctica.
@@ -27,7 +26,7 @@ El diseño de la web queda a criterio de el equipo de desarrollo, aunque cabe ac
 13. Cuando se toque un elemento del instrumento DEBE mostrar algún movimento ( Ya sea Vibración, movimiento, o el efecto de que se oprime en el caso de las teclas)
 
 
-### Requerimientos técnicos
+### Requerimientos técnicoe
 
 - Utilizar Scrum & Kanban para desarrollar el proyecto.
 - Utilizar GitFlow para el desarrollo del código.
@@ -93,9 +92,14 @@ Partiendo de una descripción de necesidades (maquetación) y de una interfaz de
 
 - Adaptar el diseño de la interfaz (cambio el color de un título, cambio la fuente,...)
 
+
 ### Recursos
 - [Página de inspiración 1](https://www.sessiontown.com/es)
 - [Página de inspiración 2](https://www.musicca.com/es/herramientas)
 - [Librería Keypress](https://dmauro.github.io/Keypress/)
+
+
+
+
 
 

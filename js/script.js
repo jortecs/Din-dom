@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function updateCarousel3D() {
         Array.from(cards3D).forEach((card, index) => {
             const offset = index - currentIndex3D;
-            card.style.transform = `rotateY(${offset * 45}deg) translateX(${offset * 650}px)`;
+            card.style.transform = `rotateY(${offset * 30}deg) translateX(${offset * 500}px)`;
             card.classList.toggle('active', index === currentIndex3D);
         });
     }

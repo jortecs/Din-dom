@@ -5,14 +5,7 @@
     box-sizing: border-box; /* Incluye el padding y el borde en el cálculo del ancho y alto */
 }
 
-body {
-    font-family: Arial, sans-serif; /* Define la fuente del cuerpo de la página */
-    background-color: #f3f4f6; /* Establece un color de fondo claro */
-    min-height: 100vh; /* Asegura que el body ocupe al menos el 100% de la altura de la ventana */
-    display: flex; /* Utiliza Flexbox para alinear los elementos dentro del body */
-    justify-content: center; /* Centra horizontalmente los elementos */
-    align-items: center; /* Centra verticalmente los elementos */
-}
+
 
 .carousel-container {
     width: 100%; /* Hace que el contenedor ocupe el 100% del ancho disponible */

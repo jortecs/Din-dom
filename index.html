@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-
-    <meta charset="UTF-8">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Neucha&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <head>
+        
+        <meta charset="UTF-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Neucha&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/styleCarrusel.css">
     <title>Home</title>
 </head>
 <body>
@@ -41,6 +42,57 @@
     <main>
         <img src="" alt="">
         <h1>We are the Digital World team, a multidisciplinary group passionate about technology and creativity.</h1>
+        <!-- Contenedor principal -->
+        <div class="carousel-container">
+            <!-- Versión Desktop -->
+            <div class="carousel-3d" id="carousel3D">
+                <div class="card" data-index="0">
+                    <img src="assets/piano.png" alt="Piano">
+                    <h2>Piano</h2>
+                    <p>El piano, con sus 24 teclas, convierte los ritmos en melodías cautivadoras. ¡Un instrumento lleno de magia!</p>
+                    <button class="go-button">GO!</button>
+                </div>
+                <div class="card active" data-index="1">
+                    <img src="assets/drums.png" alt="Batería">
+                    <h2>Batería</h2>
+                    <p>La batería, con su ritmo poderoso, marca el pulso de la música. ¡Esencial para el ritmo y la emoción!</p>
+                    <button class="go-button">GO!</button>
+                </div>
+                <div class="card" data-index="2">
+                    <img src="assets/guitar.png" alt="Guitarra">
+                    <h2>Guitarra</h2>
+                    <p>La guitarra, con sus vibrantes cuerdas, crea melodías que resuenan en el corazón. ¡Un instrumento lleno de pasión!</p>
+                    <button class="go-button">GO!</button>
+                </div>
+            </div>
+    
+            <!-- Versión Mobile -->
+            <div class="carousel-mobile" id="carouselMobile">
+                <div class="slider">
+                    <div class="slide">
+                        <img src="assets/piano.png" alt="Piano">
+                        <h2>Piano</h2>
+                        <p>El piano, con sus 24 teclas, convierte los ritmos en melodías cautivadoras. ¡Un instrumento lleno de magia!</p>
+                        <button class="go-button">GO!</button>
+                    </div>
+                    <div class="slide">
+                        <img src="assets/drums.png" alt="Batería">
+                        <h2>Batería</h2>
+                        <p>La batería, con su ritmo poderoso, marca el pulso de la música. ¡Esencial para el ritmo y la emoción!</p>
+                        <button class="go-button">GO!</button>
+                    </div>
+                    <div class="slide">
+                        <img src="assets/guitar.png" alt="Guitarra">
+                        <h2>Guitarra</h2>
+                        <p>La guitarra, con sus vibrantes cuerdas, crea melodías que resuenan en el corazón. ¡Un instrumento lleno de pasión!</p>
+                        <button class="go-button">GO!</button>
+                    </div>
+                </div>
+                <button class="nav-button prev" id="prevButton">&lt;</button>
+                <button class="nav-button next" id="nextButton">&gt;</button>
+            </div>
+        </div>
+    
     </main>
 
     <footer>
@@ -54,65 +106,8 @@
     </footer>
         
     <script src="js/index.js"></script>
+    <script src="js/script.js"></script>
 
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carrusel de Instrumentos Musicales</title>
-    <link rel="stylesheet" href="styleCarrusel.css">
-</head>
-<body>
-    <!-- Contenedor principal -->
-    <div class="carousel-container">
-        <!-- Versión Desktop -->
-        <div class="carousel-3d" id="carousel3D">
-            <div class="card" data-index="0">
-                <img src="assets/piano.png" alt="Piano">
-                <h2>Piano</h2>
-                <p>El piano, con sus 24 teclas, convierte los ritmos en melodías cautivadoras. ¡Un instrumento lleno de magia!</p>
-                <button class="go-button">GO!</button>
-            </div>
-            <div class="card active" data-index="1">
-                <img src="assets/drums.png" alt="Batería">
-                <h2>Batería</h2>
-                <p>La batería, con su ritmo poderoso, marca el pulso de la música. ¡Esencial para el ritmo y la emoción!</p>
-                <button class="go-button">GO!</button>
-            </div>
-            <div class="card" data-index="2">
-                <img src="assets/guitar.png" alt="Guitarra">
-                <h2>Guitarra</h2>
-                <p>La guitarra, con sus vibrantes cuerdas, crea melodías que resuenan en el corazón. ¡Un instrumento lleno de pasión!</p>
-                <button class="go-button">GO!</button>
-            </div>
-        </div>
-
-        <!-- Versión Mobile -->
-        <div class="carousel-mobile" id="carouselMobile">
-            <div class="slider">
-                <div class="slide">
-                    <img src="assets/piano.png" alt="Piano">
-                    <h2>Piano</h2>
-                    <p>El piano, con sus 24 teclas, convierte los ritmos en melodías cautivadoras. ¡Un instrumento lleno de magia!</p>
-                    <button class="go-button">GO!</button>
-                </div>
-                <div class="slide">
-                    <img src="assets/drums.png" alt="Batería">
-                    <h2>Batería</h2>
-                    <p>La batería, con su ritmo poderoso, marca el pulso de la música. ¡Esencial para el ritmo y la emoción!</p>
-                    <button class="go-button">GO!</button>
-                </div>
-                <div class="slide">
-                    <img src="assets/guitar.png" alt="Guitarra">
-                    <h2>Guitarra</h2>
-                    <p>La guitarra, con sus vibrantes cuerdas, crea melodías que resuenan en el corazón. ¡Un instrumento lleno de pasión!</p>
-                    <button class="go-button">GO!</button>
-                </div>
-            </div>
-            <button class="nav-button prev" id="prevButton">&lt;</button>
-            <button class="nav-button next" id="nextButton">&gt;</button>
-        </div>
-    </div>
-    <script src="script.js"></script>
+    
 </body>
 </html>

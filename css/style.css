@@ -1,10 +1,182 @@
-nav{
-    background-color: black;
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*---------------este es el navegador--------------------------*/
+p{
+    font-family: 'Lato';
 }
 
-nav a{
-    font-family: 'Neucha', cursive;
-    font-size: 40px;
-    color: #65d5db;
+h1, h2, h3, h4, h5{
+    font-family: "Neucha";
 }
+
+a{
+    font-family: "Neucha";
+}
+
+.contenedor{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: black;
+    height: 50px;
+
+}
+
+#logo{
+    width: 330px;
+    height: 200px;
+    margin-top: -49px;
+    margin-left: -30px;
+}
+
+.nav-list{
+    list-style-type: none;
+    display: flex;
+    gap: 3rem;
+    font-size: 25px;
+
+}
+
+.nav-list li a{
+     text-decoration: none;
+     color: #65d5db;
+
+}
+
+
+.abrir-menu{
+    display: none;
+}
+
+#cerrar{
+    display: none;
+}
+
+footer{
+    background-color:#8ED1D5;
+    width: 100%;
+    height: 78px;
+    color: white;
+    display: block;        
+}
+
+.parrafo-footer{
+    display: flex;
+    color: black;
+    margin-left: 40px;
+    margin-top: -20px;
+
+
+}
+
+
+.iconos-mover{
+    display: flex;
+    margin-left: 100px;
+    gap: 2rem;
+}
+
+
+@media (max-width: 799px){
+     .abrir-menu{
+        display: block;
+        background-color: black;
+        border: black;
+
+     }
+
+     .abrir-menu img {
+        width: 40px;
+     }
+
+     #cerrar{
+        display: block;
+        background-color: black;
+        border: black;
+    }
+
+    #cerrar img {
+        width: 50px;
+    }
+     .nav{
+        opacity: 0;
+        visibility: hidden;
+     }
+    .nav{
+        position: absolute;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: black;
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+        display: flex;
+    }
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+    .nav-list{
+         flex-direction: column;
+
+    }
+
+
+
+
+
+}
+
+@media (min-width:800px){
+    .contenedor{
+        height: 70px;
+    }
+    #logo{
+        width: 500px;
+        height: 300px;
+        margin-top: -73px;
+    }
+    .nav-list{
+        font-size: 45px;
+        margin-top: 10px;
+        margin-left: -1000px;
+        gap: 4rem;
+
+    }
+    .nav-list a{
+      font-size: 60px;
+      margin-left: 40px;
+      margin-top: -28px;
+      
+    }
+ 
+
+    .parrafo-footer{
+        color: black;
+        margin-left: 700px;
+        font-size: 20px;
+    }
+    
+    .iconos-mover{
+        margin-left: 750px;
+        gap: 4rem;
+        
+    }
+    
+    
+    
+}
+
+
+
+
+
 

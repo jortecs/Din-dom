@@ -12,14 +12,18 @@
 </head>
 <body>
     <header>
-        <nav>
-            <a href="/index.html">
-                <img src="/assets/images/Captura_desde_2024-10-29_12-49-27-removebg-preview(1).png" alt="This is the Ding Dom banner ">
-            </a>
-            <a href="/index.html">HOME</a>
-            <a href="/views/instrument.html">INSTRUMENTS</a>
-            <a href="/views/about-us.html">ABOUT US</a>
-        </nav>
+        <div class="contenedor">
+            <img id="logo" src="/assets/images/Captura_desde_2024-10-29_13-09-01-removebg-preview.png" alt="This is the Ding Dom banner ">
+           <button class="abrir-menu"> <img src="assets/icons/icons8-menu-96.png" alt="amburguesa"></button>
+            <nav class="nav" id="nav">
+                <button id="cerrar"><img src="assets/icons/icons8-x-64.png" alt="x"></button>
+                <ul class="nav-list">
+                  <li><a href="/index.html">HOME</a></li>
+                  <li><a href="/views/instrument.html">INSTRUMENTS</a></li>
+                  <li><a href="/views/about-us.html">ABOUT US</a></li>
+               </ul>
+            </nav> 
+        </div>
     </header>
    
     <div class="contenedorfotos">
@@ -83,7 +87,16 @@
     </div>
 
     <footer>
+        <p class="iconos-mover">
+        <a href="https://es-es.facebook.com/" target="_blank"><img src="/assets/icons/icons8-facebook-48(1).png" alt="Icon facebook"></a>
+        <a href="https://www.instagram.com/" target="-blank"><img src="/assets/icons/icons8-instagram-48(1).png" alt="Icon instagram"></a>
+        <a href="https://x.com/?lang=en" target="_blank"><img src="/assets/icons/icons8-x-50.png" alt="Icon x"></a>    
+        </p>
+        <p class="parrafo-footer">© 2024 Ding Dom. Todos los derechos reservados.</p>
+
     </footer>
+        
+    <script src="js/index.js"></script>
     <script src="/js/about-us.js"></script>
 </body>
 </html>

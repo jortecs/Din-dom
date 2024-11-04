@@ -26,3 +26,9 @@
     text-align-last: center;
 }
 
+button{
+    border: none; 
+    background: none;
+    padding: 0; 
+    cursor: pointer;
+}

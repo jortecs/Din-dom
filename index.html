@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+<head>
+
         
         <meta charset="UTF-8">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,16 +13,26 @@
         <link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/styleCarrusel.css">
+        <link rel="stylesheet" href="css/heroimage.css">
     <title>Home</title>
 </head>
 <body>
     <header>
-        <div>
-            <video src="" controls></video>
-            <img src="/assets/icons/no-music.png" alt="Stop music">
+
+        <div class="heroimage">
+            
+            <video  src="/assets/Video/Animation_Principal.mp4" autoplay muted loop ></video>
+            <p> music is what moves us</p>
+            
+            <audio id="audioPlayer" autoplay preload loop>
+                <source src="assets/sounds/hayunamigoenmi.m4a" type="audio/mpeg">
+            </audio>
+    
+              <img class="no-music" src="/assets/icons/no-music.png" alt="Stop music" id="playButton">
+            
             <div>
                 <a href="#main">
-                    <img src="/assets/icons/chevron-down.png" alt="go to">
+                  <a href="#botonhome"><img class="go-home" src="/assets/icons/chevron-down.png" alt="go to"></a> 
                 </a>
             </div>
         </div>
@@ -40,8 +51,9 @@
         
     </header>
     <main>
-        <img src="" alt="">
-        <h1>We are the Digital World team, a multidisciplinary group passionate about technology and creativity.</h1>
+        <img src="assets/images/Fotos del equipo/fotogrupal.jpg" alt="">
+        <p>We are the Digital World team, a multidisciplinary group passionate about technology and creativity.</p>
+
         <!-- Contenedor principal -->
         <div class="carousel-container">
             <!-- Versión Desktop -->
@@ -107,6 +119,7 @@
         
     <script src="js/index.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/heroimage.js"></script>
 
     
 </body>

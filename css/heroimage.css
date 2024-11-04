@@ -15,12 +15,8 @@
 
 
 .heroimage video {
-    
 
-  
-    
 }
- 
 
 .no-music{
     width: 30px;
@@ -50,7 +46,7 @@ main img{
     border-radius: 5px;
 }
 
-.descripcion-grupo{
+main p{
 border: 10px;
 border-radius: 5px;
 background-color: rgba(142, 209, 213, 0.6);
@@ -73,12 +69,9 @@ margin: 5px;
 
     .heroimage video{
       width: 30%;
-      
-      
-        
     }
 
-    .descripcion-grupo{
+    .descripcion{
         border: 10px;
         border-radius: 5px;
         background-color: rgba(142, 209, 213, 0.6);

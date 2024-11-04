@@ -60,24 +60,21 @@ a{
 footer{
     background-color:#8ED1D5;
     width: 100%;
-    height: 78px;
     color: white;
-    display: block;        
+           
 }
 
 .parrafo-footer{
-    display: flex;
     color: black;
-    margin-left: 40px;
-    margin-top: -20px;
-
-
+    text-align: center;
+    padding: 0;
+    margin: 0;
 }
-
 
 .iconos-mover{
     display: flex;
-    margin-left: 100px;
+    justify-content: center;
+    padding: 15px;
     gap: 2rem;
 }
 
@@ -129,10 +126,6 @@ footer{
 
     }
 
-
-
-
-
 }
 
 @media (min-width:800px){
@@ -157,21 +150,6 @@ footer{
       margin-top: -28px;
       
     }
- 
-
-    .parrafo-footer{
-        color: black;
-        margin-left: 700px;
-        font-size: 20px;
-    }
-    
-    .iconos-mover{
-        margin-left: 750px;
-        gap: 4rem;
-        
-    }
-    
-    
     
 }
 

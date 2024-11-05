@@ -2,6 +2,7 @@
     max-width: 100%;
 }
 
+
 main{
     display: flex;
     flex-direction: column;
@@ -35,7 +36,7 @@ main{
 .contenedores p{
     font-size: 25px;
     color: white;
-    text-align: justify;
+    text-align: left;
 }
 
 .contenedores button{

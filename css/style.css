@@ -22,21 +22,6 @@ a{
     height: 65px;
     margin-bottom: 0;
 }
-#logo{
-    width: 200px;
-    height:auto;
-    /* height: 300px; */
-    /* margin-top: -73px; */
-}
-.nav-list{
-    margin-top: 10px;
-    /* margin-left: -1000px; */
-    gap: 9rem;
-    list-style-type: none;
-    display: flex;
-    font-size: 35px;
-    margin-top: -5px;
-}
 
 
 
@@ -66,14 +51,19 @@ footer{
     text-align: center;
     padding: 0;
     margin: 0;
+    
 }
 .iconos-mover{
     display: flex;
     justify-content: center;
     padding: 15px;
-    gap: 3rem;
+    gap: 2rem;
+
 }
+
+
 @media (max-width: 768px){
+
     .nav-list{
         list-style-type: none;
         display: flex;
@@ -99,6 +89,7 @@ footer{
         display: block;
         background-color: black;
         border: black;
+
     }
     #cerrar img {
         width: 30px;
@@ -106,6 +97,9 @@ footer{
      .nav{
         opacity: 0;
         visibility: hidden;
+        z-index: 1;
+       
+        
      }
      .nav div{
         background-color: black;
@@ -131,6 +125,7 @@ footer{
         transform: translate(7%,-25%) ;
         opacity: visible;
     }
+
     .nav.visible {
         opacity: 1000;
         visibility: visible;
@@ -144,13 +139,45 @@ footer{
     }
 }
 
-    /* .contenedor{
+@media (min-width:800px){
+    .contenedor{
         height: 100px;
-    } */
-    .a1{
     }
     .a2{
     }
-    .a3{
+    .nav-list{
+        margin-top: 10px;
+        margin-left: -1000px;
+        gap: 9rem;
+
     }
+    .nav-list{
+        list-style-type: none;
+        display: flex;
+    
+    }
+    .nav-list a{
+      font-size: 50px;
+      margin-left: 140px;
+      margin-top: -28px;
+      width: 100%;
+      
+    }
+    .a1{
+
+    }
+
+    .a2{
+
+    }
+    
+    .a3{
+        
+    }
+}
+
+
+
+
+
 

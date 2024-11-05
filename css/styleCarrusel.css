@@ -64,14 +64,19 @@
 }
 
 .go-button {
-    float: right; /* Coloca el botón a la derecha dentro de la tarjeta */
-    background-color: #8ED1D5; /* Establece un color de fondo para el botón */
-    color: #333637; /* Cambia el color del texto del botón */
-    border: none; /* Elimina el borde del botón */
-    padding: 8px 16px; /* Agrega padding interno al botón */
-    border-radius: 4px; /* Redondea las esquinas del botón */
-    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
-    transition: background-color 0.3s; /* Agrega una transición suave al cambio de color de fondo */
+   
+        position: absolute; /* Ubica el botón en una posición específica dentro de la tarjeta */
+        bottom: 20px; /* Ajusta la distancia desde la parte inferior */
+        right: 20px; /* Ajusta la distancia desde el lado derecho */
+        background-color: #8ED1D5; /* Color de fondo */
+        color: #333637; /* Color de texto */
+        border: none; /* Sin borde */
+        padding: 8px 16px; /* Padding del botón */
+        border-radius: 4px; /* Bordes redondeados */
+        cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+        transition: background-color 0.3s; /* Transición suave para el cambio de color de fondo */
+        font-size: 16px; /* Ajusta el tamaño del texto si es necesario */
+    
 }
 
 .go-button:hover {
@@ -149,28 +154,48 @@
     font-size: 20px;
 }
 
-/* Botones de navegación */
+/* Botones de navegación - Estilo para flechas sin fondo */
 .nav-button {
+
+    background: none; /* Asegura que no haya fondo */
+    outline: none; /* Elimina el contorno */
+    box-shadow: none; /* Sin sombra */
+    font-size: 0; /* Oculta cualquier texto predeterminado */
+    color: transparent; /* Hace que el color del texto sea invisible */
+    background-color: transparent; /* Sin fondo */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Muestra el cursor de mano */
+    z-index: 2; /* Asegura que estén por encima del contenido */
     position: absolute; /* Posición absoluta en relación al contenedor */
     top: 50%; /* Centrado vertical */
-    transform: translateY(-50%); /* Centrado exacto */
-    background-color: white; /* Fondo blanco */
-    border: none; /* Sin borde */
-    width: 40px; /* Ancho del botón */
-    height: 40px; /* Altura del botón */
-    border-radius: 50%; /* Forma circular */
-    cursor: pointer; /* Cursor de mano */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra */
-    z-index: 2; /* Asegura que estén por encima del contenido */
+    transform: translateY(-80%); /* Centrado exacto en vertical */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+/* Botón izquierdo */
 .nav-button.prev {
-    left: -20px; /* Posición para el botón izquierdo */
+    left: 10px; /* Ajusta la posición dentro del contenedor */
 }
 
+/* Botón derecho */
 .nav-button.next {
-    right: -20px; /* Posición para el botón derecho */
+    right: 10px; /* Ajusta la posición dentro del contenedor */
 }
+
+.nav-button.prev::before {
+    content: '❮'; /* Flecha izquierda delgada */
+    font-size: 40px;
+    color: black;
+}
+
+.nav-button.next::before {
+    content: '❯'; /* Flecha derecha delgada */
+    font-size: 40px;
+    color: black;
+}
+
 
 /* Media Queries */
 @media (max-width: 768px) {
@@ -211,15 +236,15 @@
     }
 
     .slide img {
-        width: 60px;
-        height: 60px;
+        width: 200px;
+        height: 170px;
     }
 
     .slide h2 {
-        font-size: 18px;
+        font-size: 30px;
     }
 
     .slide p {
-        font-size: 13px;
+        font-size: 20px;
     }
 }

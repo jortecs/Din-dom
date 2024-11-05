@@ -1,8 +1,12 @@
 *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
     max-width: 100%;
 }
 
 .contenedorfotos{
+    width: 100%;
     padding: 30px;
     background-color: #379FA5;
     position: relative;

@@ -7,6 +7,7 @@
 
 .contenedorfotos{
     width: 100%;
+    height: 90vh;
     padding: 30px;
     background-color: #379FA5;
     position: relative;
@@ -14,6 +15,7 @@
     text-align: center;
     align-items: center;
     gap: 65px;
+    justify-content: center;
 }
 
 .integrante{
@@ -22,7 +24,7 @@
 
 .contenedorfotos div{
     display: none;
-
+    
 }
 
 .contenedorfotos div.activo{

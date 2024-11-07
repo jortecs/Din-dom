@@ -7,7 +7,7 @@
 
 .contenedorfotos{
     width: 100%;
-    height: 90vh;
+    height: 80%;
     padding: 30px;
     background-color: #379FA5;
     position: relative;
@@ -29,6 +29,7 @@
 
 .contenedorfotos div.activo{
     display: block;
+    width: 30%;
 }
 
 .contenedorfotos p, h3, h5{

@@ -63,6 +63,15 @@ git clone https://github.com/factoriaf5-santacoloma-frontend-ti/ding-dom-digital
 Utilizalo con cuidado 🌈
 ```
 
+## Demo de la pagína en desktop
+![Captura de pantalla 2024-11-07 140953](https://github.com/user-attachments/assets/cc36737f-305e-47b3-8259-567776085a5a)
+![Captura de pantalla 2024-11-07 141019](https://github.com/user-attachments/assets/05c39b60-673a-47a7-8fc3-6f01a6e959b1)
+
+## Demo de la pagína en mobil
+![Captura de pantalla 2024-11-07 141054](https://github.com/user-attachments/assets/eee42aa3-fedb-4047-ac54-57a0c703641b)
+![Captura de pantalla 2024-11-07 141109](https://github.com/user-attachments/assets/e74a6137-8920-43d3-80cd-8b1e5f9f6cdd)
+
+
 ## Nuestro incríble equipo:
 * 🐺 Jorge Bastorí
 * 🐴 Hassan Isse

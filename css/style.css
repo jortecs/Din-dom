@@ -1,19 +1,30 @@
-body{
+/* Sets padding and margin to 0 for the body, and applies border-box sizing */
+body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-/*---------------este es el navegador--------------------------*/
-p{
+
+/*--------------- This is the navigation styling --------------------------*/
+
+/* Sets the font for all paragraph text to 'Lato' */
+p {
     font-family: 'Lato';
 }
-h1, h2, h3, h4, h5{
+
+/* Sets font family to "Neucha" for all heading elements */
+h1, h2, h3, h4, h5 {
     font-family: "Neucha";
 }
-a{
+
+/* Applies "Neucha" font to all anchor tags */
+a {
     font-family: "Neucha";
 }
-.contenedor{
+
+/* Container for navigation, aligns items with flexbox, centers text,
+   spaces items between, adds padding, background color, and sets height */
+.contenedor {
     display: flex;
     text-align: center;
     justify-content: space-between;
@@ -23,94 +34,112 @@ a{
     margin-bottom: 0;
 }
 
-
-
-/* .nav-list a{
-  font-size: 50px;
-  margin-left: 140px;
-  margin-top: -28px;
-  width: 100%;
-} */
-.nav-list li a{
+/* Navigation links styling: removes underline and applies color */
+.nav-list li a {
      text-decoration: none;
      color: #65D5DB;
 }
-.abrir-menu{
+
+/* Hide the menu open button by default */
+.abrir-menu {
     display: none;
 }
-#cerrar{
+
+/* Hide the close button by default */
+#cerrar {
     display: none;
 }
-footer{
-    background-color:#8ED1D5;
+
+/* Footer styling: sets background color, full width, and text color */
+footer {
+    background-color: #8ED1D5;
     width: 100%;
     color: white;
 }
-.parrafo-footer{
+
+/* Paragraph styling in footer: black text, center alignment, no padding/margin */
+.parrafo-footer {
     color: black;
     text-align: center;
     padding: 0;
     margin: 0;
-    
 }
-.iconos-mover{
+
+/* Icons styling in footer: centers them with flexbox, padding, and spacing */
+.iconos-mover {
     display: flex;
     justify-content: center;
     padding: 15px;
     gap: 2rem;
-
 }
 
+/* ---------- Media Query for screens 768px and smaller ---------- */
+@media (max-width: 768px) {
 
-@media (max-width: 768px){
-
-    .nav-list{
+    /* Flexbox for nav items, space between items, and increases font size */
+    .nav-list {
         list-style-type: none;
         display: flex;
         gap: 3rem;
         font-size: 25px;
+        
     }
-     .abrir-menu{
+
+    /* Show the menu button with black background for smaller screens */
+    .abrir-menu {
         display: block;
         background-color: black;
         border: black;
         margin-left: -75px;
-     }
-     #logo{
-        width: 250px;
-        height: 34px;
-        margin-top: 0;
-        margin-left: -17px;
     }
-     .abrir-menu img {
+
+    /* Logo styling: sets dimensions and margins */
+    #logo {
+        width: 250px;
+        height: 50px;
+        margin-top: 0;
+        margin-left: -14px;
+    }
+
+    /* Menu button image size */
+    .abrir-menu img {
         width: 30px;
-     }
-     #cerrar{
+    }
+
+    /* Shows the close button with black background */
+    #cerrar {
         display: block;
         background-color: black;
         border: black;
-
     }
+
+    /* Close button image size */
     #cerrar img {
         width: 30px;
     }
-     .nav{
+
+    /* Sets nav container as invisible by default with hidden visibility */
+    .nav {
         opacity: 0;
         visibility: hidden;
         z-index: 1;
-       
-        
-     }
-     .nav div{
+    }
+
+    /* Sets black background and width for nav container */
+    .nav div {
         background-color: black;
         width: 270px;
-     }
-     .nav #cerrar{
+    }
+
+    /* Positions close button within the nav container */
+    .nav #cerrar {
         margin-left: 200px;
-         margin-bottom: 50px;
-         margin-top: 10px;
-     }
-    .nav{
+        margin-bottom: 50px;
+        margin-top: 10px;
+    }
+
+    /* Makes nav container a vertical, column-aligned menu */
+    .nav {
         flex-direction: column;
         align-items: end;
         gap: 1rem;
@@ -122,62 +151,56 @@ footer{
         display: flex;
         z-index: 990;
         margin-left: -410px;
-        transform: translate(7%,-25%) ;
+        transform: translate(7%, -25%);
         opacity: visible;
     }
 
+    /* Applies visible style to nav when active */
     .nav.visible {
         opacity: 1000;
         visibility: visible;
     }
-    .nav-list{
+
+    /* Makes nav list a column and applies bottom margin */
+    .nav-list {
          flex-direction: column;
          margin-bottom: 730px;
     }
-    .imagen-debajo img{
+
+    /* Ensures image is positioned below other elements */
+    .imagen-debajo img {
         z-index: 0;
     }
 }
 
-@media (min-width:800px){
-    .contenedor{
+@media (min-width: 800px) {
+    .contenedor {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
         height: 100px;
     }
-    .a2{
-    }
-    .nav-list{
-        margin-top: 10px;
-        margin-left: -1000px;
-        gap: 9rem;
 
-    }
-    .nav-list{
+    .nav-list {
         list-style-type: none;
         display: flex;
-    
-    }
-    .nav-list a{
-      font-size: 50px;
-      margin-left: 140px;
-      margin-top: -28px;
-      width: 100%;
-      
-    }
-    .a1{
-
+        gap: 3rem; /* Ajusta el espacio entre los elementos */
+        margin-left: auto; /* Empuja la lista a la derecha */
+        font-size: 25px; /* Ajusta el tamaño si es necesario */
     }
 
-    .a2{
-
-    }
-    
-    .a3{
-        
+    .nav-list a {
+        font-size: 60px;
+        color: #65D5DB; /* Color del texto */
+        text-decoration: none;
     }
 }
 
+    /* Empty classes for potential styling */
+    .a1 {}
 
+    .a2 {}
 
-
-
-
+    .a3 {}
+}

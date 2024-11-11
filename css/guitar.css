@@ -31,11 +31,6 @@
   color: white; /* Establece el color del texto en blanco. */
 }
 
-.modal2 img {
-  display: none;
-
-}
-
 
 .close-btn2 {
   position: absolute; /* Posiciona el botón de cerrar absolutamente dentro del modal. */
@@ -49,7 +44,7 @@
 
 .guitar-container {
     position: relative; 
-    width: 700px; 
+    max-width: 700px; 
     margin: 0 auto; 
 }
 

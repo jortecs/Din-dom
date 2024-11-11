@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/instruments.css">
     <link rel="stylesheet" href="/css/piano.css">
+    <link rel="stylesheet" href="/css/guitar.css">
     <title>Instruments</title>
 </head>
 <body>
@@ -35,7 +36,7 @@
                 <h2>PIANO</h2>
                 <p>The piano is a percussive stringed instrument with 24 keys that produces sound by striking strings with hammers. It is versatile and is used in various musical genres, allowing melodies and harmonies to be played at the same time, making it essential for performance and composition.</p>
                  <!-- Botón para abrir el modal -->
-                <button id="openModal">Abrir Modal</button>
+                <button id="openModal">STARTS TO PLAY</button>
             </div>
                 <!-- Modal -->
             <div id="modal" class="modal">
@@ -69,8 +70,25 @@
             <div>
                 <h2>GUITAR</h2>
                 <p>The guitar is a stringed instrument, usually with six strings, played by plucking or strumming. There are acoustic guitars, which produce sound naturally, and electric guitars, which amplify it. It is versatile and is used in various musical genres, allowing melodies and chords to be played both solo and in ensemble.</p>
-                <button>TRY IT YOURSELF</button>
+                <button id="openModal">STARTS TO PLAY</button>
+
             </div>    
+            <div id="modal2" class="modal2">
+                <div class="modal-content2">
+                    <span class="close-btn2">&times;</span>
+                    <h2>STARTS TO PLAY</h2>
+                    <div class="guitar-container">
+                        <img src="/assets/images/guitar_base.png" alt="Guitar" class="guitar-image">
+                        <div class="string" id="string1" data-freq="329.63"></div>
+                        <div class="string" id="string2" data-freq="246.94"></div>
+                        <div class="string" id="string3" data-freq="196.00"></div>
+                        <div class="string" id="string4" data-freq="146.83"></div>
+                        <div class="string" id="string5" data-freq="110.00"></div>
+                        <div class="string" id="string6" data-freq="82.41"></div>
+                    </div>
+                </div>
+                  
+            </div>
         </div>
     </main>
 
@@ -88,5 +106,6 @@
         
     <script src="/js/index.js"></script>
     <script src="../js/piano.js"></script>
+    <script src="/js/guitar.js"></script>
 </body>
 </html>

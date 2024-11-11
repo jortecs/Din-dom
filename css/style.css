@@ -1,0 +1,141 @@
+/* Sets padding and margin to 0 for the body, and applies border-box sizing */
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*--------------- This is the navigation styling --------------------------*/
+
+/* Sets the font for all paragraph text to 'Lato' */
+p {
+    font-family: 'Lato';
+}
+
+/* Sets font family to "Neucha" for all heading elements */
+h1, h2, h3, h4, h5, a {
+    font-family: "Neucha";
+}
+
+/* Footer styling: sets background color, full width, and text color */
+footer {
+    background-color: #8ED1D5;
+    width: 100%;
+    color: white;
+}
+
+/* Paragraph styling in footer: black text, center alignment, no padding/margin */
+.parrafo-footer {
+    color: black;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+#logo{
+    width: 250px;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: black;
+}
+
+.abrir-menu {
+    display: block;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.abrir-menu img {
+    width: 40px;
+}
+
+/* Estilo de la navegación (oculta) */
+.nav {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    background-color: black;
+    z-index: 1000;
+    padding: 1rem;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.nav.visible {
+    display: flex;
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-list li {
+    margin: 1rem 0;
+}
+
+.nav-list a {
+    color: #65D5DB;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#cerrar {
+    background: none;
+    border: none;
+    align-self: flex-end;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+#cerrar img {
+    width: 30px;
+}
+
+/* Estilo de escritorio */
+@media (min-width: 800px) {
+    .abrir-menu {
+        display: none;
+    }
+
+    .nav {
+        display: flex;
+        position: static;
+        flex-direction: row;
+        height: auto;
+        width: auto;
+        background-color: transparent;
+        box-shadow: none;
+    }
+
+    .nav-list {
+        display: flex;
+        gap: 3rem;
+    }
+
+    .nav-list li {
+        margin: 0;
+    }
+
+    .nav-list a {
+        font-size: 25px;
+    }
+
+    #cerrar {
+        display: none;
+    }
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/instruments.css">
+    <link rel="stylesheet" href="/css/piano.css">
+    <link rel="stylesheet" href="/css/guitar.css">
+    <title>Instruments</title>
+</head>
+<body>
+    <header>
+        <div class="contenedor">
+            <img id="logo" src="/assets/images/Captura_desde_2024-10-29_13-09-01-removebg-preview.png" alt="This is the Ding Dom banner ">
+           <button class="abrir-menu"> <img src="/assets/icons/icons8-menu-96.png" alt="amburguesa"></button>
+            <nav class="nav" id="nav">
+                <button id="cerrar"><img src="/assets/icons/icons8-x-64.png" alt="x"></button>
+                <ul class="nav-list">
+                  <li><a href="/index.html">HOME</a></li>
+                  <li><a href="/views/instrument.html">INSTRUMENTS</a></li>
+                  <li><a href="/views/about-us.html">ABOUT US</a></li>
+               </ul>
+            </nav> 
+        </div>
+    </header>
+
+    <main>
+
+        <div class="contenedores">
+            <iframe  src="https://www.youtube.com/embed/3gZC5763wYk?si=W4FFARglyPJ0vaJi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div>
+                <h2>PIANO</h2>
+                <p>The piano is a percussive stringed instrument with 24 keys that produces sound by striking strings with hammers. It is versatile and is used in various musical genres, allowing melodies and harmonies to be played at the same time, making it essential for performance and composition.</p>
+                 <!-- Botón para abrir el modal -->
+                <button id="openModal">STARTS TO PLAY</button>
+            </div>
+                <!-- Modal -->
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <span class="close-btn">&times;</span>
+                    <h2>STARTS TO PLAY</h2>
+                    <div class="main">
+                        <div class="container">
+                            <div class="piano-container">
+                            </div>
+                        </div>
+                    </div>
+                    <img src="/assets/images/rotate-your-phone-landscape-icon-free-vector-removebg-preview.png" alt="">
+
+                </div>
+            </div>        
+        </div>
+
+        <div class="contenedores">
+            <iframe src="https://www.youtube.com/embed/2xc55G7vVxg?si=80ChZe_rNLkNNWXw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div>
+                <h2>DRUM SET</h2>
+                <p>The drum set is a percussion instrument consisting of a set of drums and cymbals. It is played by striking the surfaces with drumsticks and is instrumental in setting the beat in various genres of music. The drum kit brings energy and structure to songs, and its versatility makes it essential in rock bands, jazz bands, pop bands and more.</p>
+                <button>TRY IT YOURSELF</button>
+            </div>   
+        </div>
+ 
+        
+        <div class="contenedores">
+            <iframe src="https://www.youtube.com/embed/lnrV4EFYxm4?si=1Lcr7LywYFgh1ao-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div>
+                <h2>GUITAR</h2>
+                <p>The guitar is a stringed instrument, usually with six strings, played by plucking or strumming. There are acoustic guitars, which produce sound naturally, and electric guitars, which amplify it. It is versatile and is used in various musical genres, allowing melodies and chords to be played both solo and in ensemble.</p>
+                <button id="openModal2">STARTS TO PLAY</button>
+
+            </div>    
+            <div id="modal2" class="modal2">
+                <div class="modal-content2">
+                    <span class="close-btn2">&times;</span>
+                    <h2>STARTS TO PLAY</h2>
+                    <div class="guitar-container">
+                        <img src="/assets/images/guitar_base.png" alt="Guitar" class="guitar-image">
+                        <div class="string" id="string1" data-freq="329.63"></div>
+                        <div class="string" id="string2" data-freq="246.94"></div>
+                        <div class="string" id="string3" data-freq="196.00"></div>
+                        <div class="string" id="string4" data-freq="146.83"></div>
+                        <div class="string" id="string5" data-freq="110.00"></div>
+                        <div class="string" id="string6" data-freq="82.41"></div>
+                    </div>
+                </div>
+                  
+            </div>
+        </div>
+    </main>
+
+
+
+    <footer>
+        <div class="iconos-mover">
+            <a href="https://es-es.facebook.com/" target="_blank"><img src="/assets/icons/icons8-facebook-48(1).png" alt="Icon facebook"></a>
+            <a href="https://www.instagram.com/" target="-blank"><img src="/assets/icons/icons8-instagram-48(1).png" alt="Icon instagram"></a>
+            <a href="https://x.com/?lang=en" target="_blank"><img src="/assets/icons/icons8-x-50.png" alt="Icon x"></a>    
+        </div>
+        <p class="parrafo-footer">© 2024 Ding Dom. All rights reserved.</p>
+
+    </footer>
+        
+    <script src="/js/index.js"></script>
+    <script src="../js/piano.js"></script>
+    <script src="/js/guitar.js"></script>
+</body>
+</html>

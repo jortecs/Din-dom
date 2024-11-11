@@ -1,0 +1,80 @@
+.contenedorfotos{
+    width: 100%;
+    height: 80%;
+    padding: 30px;
+    background-color: #379FA5;
+    position: relative;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap: 65px;
+    justify-content: center;
+}
+
+.integrante{
+    height: 450px;
+}
+
+.contenedorfotos div{
+    display: none;
+    
+}
+
+.contenedorfotos div.activo{
+    display: block;
+    width: 30%;
+}
+
+.contenedorfotos p, h3, h5{
+    color: white;
+    text-align: center;
+    margin: 15px;
+}
+
+.contenedorfotos h3{
+    font-size: 35px;
+}
+
+.contenedorfotos h5{
+    font-size: 30px;
+}
+
+.contenedorfotos p{
+    font-size: 25px;
+    text-align: center;
+    display: none;
+}
+
+button{
+    border: none; 
+    background: none;
+    padding: 0; 
+    cursor: pointer;
+}
+
+#retroceder,
+#avanzar {
+    position: absolute;
+}    
+
+#retroceder {
+    left: 10px;
+}
+
+#avanzar {
+    right: 10px;
+}
+
+
+@media (min-width: 800px) {
+
+    .contenedorfotos .activo {
+        display: flex; 
+        gap: 55px;
+        align-items: center;
+        justify-content: center;
+    }
+    .contenedorfotos .activo .elemento {
+        flex: 1 1 30%; 
+    }
+}

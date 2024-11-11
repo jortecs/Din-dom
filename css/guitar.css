@@ -1,0 +1,83 @@
+#openModal {
+  padding: 10px 20px; /* Añade espacio dentro del botón: 10px arriba y abajo, 20px a los lados. */
+  font-size: 16px; /* Establece el tamaño de fuente en 16 píxeles. */
+  cursor: pointer; /* Cambia el cursor a una mano al pasar sobre el botón, indicando que es clickeable. */
+} /* Estilos del Modal */
+.modal2 {
+  display: none; /* Oculta el modal por defecto. */
+  position: fixed; /* Fija el modal en la pantalla, evitando que se desplace con el contenido. */
+  top: 0; /* Coloca el modal en la parte superior de la ventana. */
+  left: 0; /* Coloca el modal en el lado izquierdo de la ventana. */
+  width: 100%; /* Hace que el modal ocupe todo el ancho de la ventana. */
+  height: 100%; /* Hace que el modal ocupe toda la altura de la ventana. */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Fondo negro semi-transparente para crear un efecto de superposición. */
+  justify-content: center; /* Centra el contenido del modal horizontalmente. */
+  align-items: center; /* Centra el contenido del modal verticalmente. */
+  z-index: 10; /* Asegura que el modal esté por encima de otros elementos (con un z-index más bajo). */
+}
+.modal-content2 {
+  position: relative; /* Permite que los elementos dentro del modal se posicionen relativos a este. */
+  background-color: #35a6a6; /* Establece un color de fondo turquesa para el contenido del modal. */
+  width: 90%; /* Hace que el contenido ocupe el 90% del ancho del modal. */
+  max-width: 1200px; /* Limita el ancho máximo a 600 píxeles. */
+  padding: 20px; /* Añade un espacio interno de 20 píxeles alrededor del contenido. */
+  border-radius: 10px; /* Redondea las esquinas del contenido del modal. */
+  text-align: center; /* Centra el texto dentro del contenido del modal. */
+  color: white; /* Establece el color del texto en blanco. */
+}
+
+
+.close-btn2 {
+  position: absolute; /* Posiciona el botón de cerrar absolutamente dentro del modal. */
+  top: 10px; /* Coloca el botón 10 píxeles desde la parte superior del modal. */
+  right: 10px; /* Coloca el botón 10 píxeles desde el lado derecho del modal. */
+  font-size: 24px; /* Establece el tamaño de fuente del botón de cerrar en 24 píxeles. */
+  cursor: pointer; /* Cambia el cursor a una mano al pasar sobre el botón, indicando que es clickeable. */
+  color: white; 
+}
+
+
+.guitar-container {
+    position: relative; 
+    max-width: 700px; 
+    margin: 0 auto; 
+}
+
+.guitar-image {
+    width: 100%; 
+    display: block; 
+}
+
+#string1 { top: 31%; } 
+#string2 { top: 38%; } 
+#string3 { top: 45%; } 
+#string4 { top: 52%; } 
+#string5 { top: 59%; } 
+#string6 { top: 66%; } 
+
+/* Definición de la animación de vibración */
+@keyframes vibrate {
+    0% { transform: rotate(0deg); } 
+    25% { transform: rotate(1deg); } 
+    50% { transform: rotate(0deg); } 
+    75% { transform: rotate(-1deg); } 
+    100% { transform: rotate(0deg); } 
+}
+
+.string {
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(to bottom, rgb(87, 87, 87), rgb(141, 141, 141));
+    left: 0;
+    transform-origin: left center;
+}
+
+.string.active {
+    animation: vibrate 0.3s ease-out;
+}

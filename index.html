@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Neucha&display=swap"
+        rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styleCarrusel.css">
+    <link rel="stylesheet" href="css/heroimage.css">
+    <title>Home</title>
+</head>
+
+<body>
+    
+    <div class="heroimage">
+        
+        <video  src="/assets/Video/Animation_Principal.mp4" autoplay muted loop ></video>
+        <p> music is what moves us</p>
+        
+        <audio id="audioPlayer" autoplay >
+            <source src="assets/sounds/Audio_Intro.mp3" type="audio/mpeg">
+        </audio>
+        
+        <img class="no-music" src="/assets/icons/no-music.png" alt="Stop music" id="playButton">
+        
+        <div>
+            <a href="#gomenu">
+                <img class="go-home" src="/assets/icons/chevron-down.png" alt="go to">
+            </a>
+        </div>
+    </div>
+    <header>
+       
+        <div id="gomenu" class="contenedor">
+            <img id="logo" src="assets/images/logo-laptop.png" alt="This is the Ding Dom banner ">
+            <button class="abrir-menu"> <img src="assets/icons/icons8-menu-96.png" alt="amburguesa"></button>
+
+            <nav class="nav" id="nav">
+                <button id="cerrar"><img src="assets/icons/icons8-x-64.png" alt="x"></button>
+                <ul class="nav-list">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="views/instrument.html">INSTRUMENTS</a></li>
+                    <li><a href="views/about-us.html">ABOUT US</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+    <main>
+        <img src="assets/images/Fotos del equipo/fotogrupal.jpg" alt="">
+        <p class="descripcion">We are the Digital World team, a multidisciplinary group passionate about technology and
+            creativity.</p>
+
+        <!-- Contenedor principal -->
+        <div class="carousel-container">
+            <!-- Versión Desktop -->
+            <div class="carousel-3d" id="carousel3D">
+                <div class="card" data-index="0">
+                    <img src="assets/piano.png" alt="Piano">
+                    <p>The piano, with its 24 keys, turns rhythms into captivating melodies - an instrument full of magic!</p>
+                    <a href="views/instrument.html" class="go-button">GO!</a>
+                </div>
+                <div class="card active" data-index="1">
+                    <img src="assets/drums.png" alt="Batería">
+                    <h2>Drums</h2>
+                    <p>The drums, with their powerful beat, set the pulse of the music - essential for rhythm and emotion!</p>
+                    <a href="views/instrument.html" class="go-button">GO!</a>
+                </div>
+                <div class="card" data-index="2">
+                    <img src="assets/guitar.png" alt="Guitarra">
+                    <h2>Guitar</h2>
+                    <p>The guitar, with its vibrant strings, creates melodies that resonate in the heart - an instrument full of passion!</p>
+                    <a href="views/instrument.html" class="go-button">GO!</a>
+                </div>
+            </div>
+
+            <!-- Versión Mobile -->
+            <div class="carousel-mobile" id="carouselMobile">
+                <div class="slider">
+                    <div class="slide">
+                        <img src="assets/piano.png" alt="Piano">
+                        <p>The piano, with its 24 keys, turns rhythms into captivating melodies - an instrument full of magic!</p>
+                        <a href="views/instrument.html" class="go-button">GO!</a>
+                    </div>
+                    <div class="slide">
+                        <img src="assets/drums.png" alt="Drums">
+                        <h2>Drums</h2>
+                        <p>The drums, with their powerful beat, set the pulse of the music - essential for rhythm and emotion!</p>
+                        <a href="views/instrument.html" class="go-button">GO!</a>
+                    </div>
+                    <div class="slide">
+                        <img src="assets/guitar.png" alt="Guitar">
+                        <h2>Guitar</h2>
+                        <p>The guitar, with its vibrant strings, creates melodies that resonate in the heart - an instrument full of passion!</p>
+                        <a href="views/instrument.html" class="go-button">GO!</a>
+                    </div>
+                </div>
+                <button class="nav-button prev" id="prevButton">&lt;</button>
+                <button class="nav-button next" id="nextButton">&gt;</button>
+            </div>
+        </div>
+
+        <footer>
+            <p class="iconos-mover">
+                <a href="https://es-es.facebook.com/" target="_blank"><img src="assets/icons/icons8-facebook-48(1).png"
+                        alt="Icon facebook"></a>
+                <a href="https://www.instagram.com/" target="-blank"><img src="assets/icons/icons8-instagram-48(1).png"
+                        alt="Icon instagram"></a>
+                <a href="https://x.com/?lang=en" target="_blank"><img src="assets/icons/icons8-x-50.png"
+                        alt="Icon x"></a>
+            </p>
+            <p class="parrafo-footer">© 2024 Ding Dom. Todos los derechos reservados.</p>
+
+        </footer>
+
+        <script src="js/index.js"></script>
+        <script src="js/script.js"></script>
+        <script src="js/heroimage.js"></script>
+
+
+</body>
+
+</html>

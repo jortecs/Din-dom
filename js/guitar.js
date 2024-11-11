@@ -1,29 +1,22 @@
-// Obtener elementos
-const modal = document.getElementById("modal2");
-const openModalBtn = document.getElementById("openModal2");
-const closeModalBtn = document.querySelector(".close-btn2");
+window.onload = function() {
+  const modal = document.getElementById("modal2");
+  const openModalBoton = document.getElementById("openModal2"); 
+  const closeModalBoton = document.querySelector(".close-btn2");
 
-// Función para abrir el modal
-openModalBtn.addEventListener("click", () => {
-  modal.style.display = "flex";
-});
+  openModalBoton.addEventListener("click", () => {
+    modal.style.display = "flex";
+  });
 
-// Función para cerrar el modal
-closeModalBtn.addEventListener("click", () => {
-  modal.style.display = "none";
-});
-
-// Cerrar modal al hacer clic fuera del contenido
-window.addEventListener("click", (event) => {
-  if (event.target === modal) {
+  closeModalBoton.addEventListener("click", () => {
     modal.style.display = "none";
-  }
-});
+  });
 
-
-
-
-
+  window.addEventListener("click", (event) => {
+    if (event.target === modal) {
+      modal.style.display = "none";
+    }
+  });
+};
 
 // Crear contexto de audio
 const context = new (window.AudioContext || window.webkitAudioContext)();

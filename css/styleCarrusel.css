@@ -1,0 +1,256 @@
+/* Estilos generales */
+* {
+    margin: 0; /* Elimina el margen por defecto de todos los elementos */
+    padding: 0; /* Elimina el padding por defecto de todos los elementos */
+    box-sizing: border-box; /* Incluye el padding y el borde en el cálculo del ancho y alto */
+}
+
+
+
+.carousel-container {
+    width: 100%; /* Hace que el contenedor ocupe el 100% del ancho disponible */
+    max-width: 1200px; /* Define un ancho máximo para el contenedor */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    position: relative; /* Permite que los elementos hijos con posición absoluta se posicionen en relación a este contenedor */
+}
+
+/* Estilos para versión Desktop (3D) */
+.carousel-3d {
+    height: 600px; /* Define la altura del carrusel en su versión 3D */
+    perspective: 1000px; /* Establece la perspectiva para el efecto 3D */
+    display: flex; /* Utiliza Flexbox para alinear las tarjetas dentro del carrusel */
+    justify-content: center; /* Centra horizontalmente las tarjetas */
+    align-items: center; /* Centra verticalmente las tarjetas */
+    position: relative; /* Permite la correcta visualización de los elementos hijos con posición absoluta */
+}
+
+.card {
+    position: absolute; /* Permite que cada tarjeta se posicione en un lugar específico dentro del carrusel */
+    width: 320px; /* Define un ancho específico para las tarjetas */
+    background-color: #379FA5; /* Establece un color de fondo para las tarjetas */
+    border-radius: 8px; /* Redondea las esquinas de las tarjetas */
+    padding: 60px; /* Agrega un padding interno */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Agrega una sombra sutil a las tarjetas */
+    transition: all 0.5s ease; /* Agrega una transición suave a todos los cambios de estilo */
+    opacity: 0.7; /* Establece la opacidad de las tarjetas por defecto */
+    transform-style: preserve-3d; /* Permite que los hijos mantengan su propia transformación en 3D */
+}
+
+.card.active {
+    opacity: 1; /* Hace que la tarjeta activa sea completamente visible */
+    z-index: 10; /* Eleva la tarjeta activa por encima de las demás */
+    transform: scale(1); /* Asegura que la tarjeta activa no esté escalada */
+}
+
+.card img {
+    width: 140px; /* Establece el ancho de las imágenes dentro de las tarjetas */
+    height: 96px; /* Establece la altura de las imágenes dentro de las tarjetas */
+    margin: 0 auto 16px; /* Centra la imagen horizontalmente y agrega un margen inferior */
+    display: block; /* Asegura que la imagen sea un bloque, ocupando toda la línea */
+}
+
+.card h2 {
+    color: white; /* Cambia el color del texto del encabezado a blanco */
+    font-size: 24px; /* Establece el tamaño de fuente del encabezado */
+    margin-bottom: 12px; /* Agrega un margen inferior al encabezado */
+    text-align: center;
+}
+
+.card p {
+    color: white; /* Cambia el color del texto del párrafo a blanco */
+    margin-bottom: 24px; /* Agrega un margen inferior al párrafo */
+    line-height: 1.5; /* Establece la altura de línea para mejorar la legibilidad */
+    text-align: center;
+}
+
+.go-button {
+   
+        position: absolute; /* Ubica el botón en una posición específica dentro de la tarjeta */
+        bottom: 20px; /* Ajusta la distancia desde la parte inferior */
+        right: 20px; /* Ajusta la distancia desde el lado derecho */
+        background-color: #8ED1D5; /* Color de fondo */
+        color: #333637; /* Color de texto */
+        border: none; /* Sin borde */
+        padding: 8px 16px; /* Padding del botón */
+        border-radius: 4px; /* Bordes redondeados */
+        cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+        transition: background-color 0.3s; /* Transición suave para el cambio de color de fondo */
+        font-size: 16px; /* Ajusta el tamaño del texto si es necesario */
+        text-decoration: none;
+    
+}
+
+.go-button:hover {
+    background-color: #d8e4e3; /* Cambia el color de fondo del botón al pasar el mouse */
+}
+
+/*////////////////// Estilos para versión Mobile ///////////////////////////////////////*/
+
+.carousel-mobile {
+    display: none; /* Oculta el carrusel móvil en pantallas grandes */
+    width: 100%; /* Hace que el carrusel ocupe todo el ancho disponible */
+    max-width: 400px; /* Define un ancho máximo para el carrusel móvil */
+    margin: 0 auto; /* Centra el carrusel móvil horizontalmente */
+    position: relative; /* Establece el contexto de posición para los hijos absolutos */
+    overflow: hidden; /* Oculta cualquier contenido que desborde el contenedor */
+}
+
+.slider {
+    display: flex; /* Utiliza Flexbox para alinear las diapositivas en fila */
+    transition: transform 0.3s ease-in-out; /* Agrega una transición suave al mover las diapositivas */
+}
+
+.slide {
+    min-width: 100%; /* Hace que cada diapositiva ocupe el 100% del ancho del contenedor */
+    height: 600px; /* Altura de la diapositiva */
+    background-color: #379FA5; /* Color de fondo de la diapositiva */
+    border-radius: 8px; /* Redondea las esquinas de la diapositiva */
+    padding: 24px; /* Agrega padding interno */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra de la diapositiva */
+    display: flex; /* Flexbox para el layout interno */
+    flex-direction: column; /* Coloca los elementos dentro de la diapositiva en columna */
+    align-items: center; /* Centra horizontalmente los elementos */
+    position: relative; /* Para posicionar el botón "Go" en la esquina */
+}
+
+/* Estilos para la imagen */
+.slide img {
+    width: 80px; /* Ancho de la imagen */
+    height: 80px; /* Altura de la imagen */
+    margin: 20px auto; /* Centra la imagen horizontalmente */
+    display: block; /* Asegura que la imagen sea un bloque */
+    
+}
+
+/* Estilos para el título */
+.slide h2 {
+    font-size: 24px; /* Tamaño del encabezado */
+    color: white; /* Color de texto blanco */
+    text-align: center; /* Centrado horizontal del encabezado */
+    margin: 15px 0; /* Espaciado superior e inferior */
+    width: 100%; /* Ocupa el ancho completo */
+}
+
+/* Estilos para el párrafo */
+.slide p {
+    font-size: 16px; /* Tamaño del texto del párrafo */
+    color: white; /* Color de texto blanco */
+    text-align: center; /* Centrado horizontal del texto */
+    line-height: 1.5; /* Altura de línea */
+    margin: 10px 0; /* Espaciado superior e inferior */
+    max-width: 90%; /* Limita el ancho máximo */
+}
+
+/* Estilos para el botón GO */
+.slide .go-button {
+    position: absolute; /* Ubica el botón en la esquina de la diapositiva */
+    bottom: 24px; /* Margen inferior */
+    right: 24px; /* Margen derecho */
+    background-color: #8ED1D5; /* Color de fondo */
+    color: #333637; /* Color de texto blanco */
+    border: none; /* Sin borde */
+    padding: 20px 30px; /* Padding del botón */
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor de mano */
+    font-size: 20px;
+    
+    
+}
+
+/* Botones de navegación - Estilo para flechas sin fondo */
+.nav-button {
+
+    background: none; /* Asegura que no haya fondo */
+    outline: none; /* Elimina el contorno */
+    box-shadow: none; /* Sin sombra */
+    font-size: 0; /* Oculta cualquier texto predeterminado */
+    color: transparent; /* Hace que el color del texto sea invisible */
+    background-color: transparent; /* Sin fondo */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Muestra el cursor de mano */
+    z-index: 2; /* Asegura que estén por encima del contenido */
+    position: absolute; /* Posición absoluta en relación al contenedor */
+    top: 50%; /* Centrado vertical */
+    transform: translateY(-80%); /* Centrado exacto en vertical */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Botón izquierdo */
+.nav-button.prev {
+    left: 10px; /* Ajusta la posición dentro del contenedor */
+}
+
+/* Botón derecho */
+.nav-button.next {
+    right: 10px; /* Ajusta la posición dentro del contenedor */
+}
+
+.nav-button.prev::before {
+    content: '❮'; /* Flecha izquierda delgada */
+    font-size: 40px;
+    color: black;
+}
+
+.nav-button.next::before {
+    content: '❯'; /* Flecha derecha delgada */
+    font-size: 40px;
+    color: black;
+}
+
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .carousel-3d {
+        display: none; /* Oculta el carrusel 3D en pantallas pequeñas */
+    }
+
+    .carousel-mobile {
+        display: block; /* Muestra el carrusel móvil en pantallas pequeñas */
+    }
+
+    /* Ajustes de tamaño para móvil */
+    .slide {
+        padding: 20px;
+    }
+
+    .slide img {
+        width: auto;
+        height: auto;
+        margin: 15px auto;
+        max-width: 300px;
+        max-height: 180px;
+
+    }
+
+    .slide h2 {
+        font-size: 40px;
+        margin: 12px 0;
+    }
+
+    .slide p {
+        font-size: 27px;
+        margin: 8px 0;
+    }
+}
+
+/* Para pantallas muy pequeñas */
+@media (max-width: 320px) {
+    .slide {
+        padding: 15px;
+    }
+
+    .slide img {
+        width: 200px;
+        height: 170px;
+    }
+
+    .slide h2 {
+        font-size: 30px;
+    }
+
+    .slide p {
+        font-size: 20px;
+    }
+}

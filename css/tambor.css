@@ -1,0 +1,310 @@
+/*---------------------------tambor------------------------------------------*/
+#openModal1 {
+    padding: 10px 10px; /* Añade espacio dentro del botón: 10px arriba y abajo, 20px a los lados. */
+    font-size: 16px; /* Establece el tamaño de fuente en 16 píxeles. */
+  } 
+  /* Estilos del Modal */
+  .modal1 {
+    display: none; /* Oculta el modal por defecto. */
+    position: fixed; /* Fija el modal en la pantalla, evitando que se desplace con el contenido. */
+    top: 0; /* Coloca el modal en la parte superior de la ventana. */
+    left: 0; /* Coloca el modal en el lado izquierdo de la ventana. */
+    width: 100%; /* Hace que el modal ocupe todo el ancho de la ventana. */
+    height: 100%; /* Hace que el modal ocupe toda la altura de la ventana. */
+    background-color: rgba(    0,    0,    0,    0.5  ); /* Fondo negro semi-transparente para crear un efecto de superposición. */
+    justify-content: center; /* Centra el contenido del modal horizontalmente. */
+    align-items: center; /* Centra el contenido del modal verticalmente. */
+    z-index: 10; /* Asegura que el modal esté por encima de otros elementos (con un z-index más bajo). */
+  }
+  .modal-content1 {
+    position: relative; /* Permite que los elementos dentro del modal se posicionen relativos a este. */
+    background-color: #35a6a6; /* Establece un color de fondo turquesa para el contenido del modal. */
+    width: 80%; /* Hace que el contenido ocupe el 90% del ancho del modal. */
+    max-width: 1300px; /* Limita el ancho máximo a 600 píxeles. */
+    padding: 20px; /* Añade un espacio interno de 20 píxeles alrededor del contenido. */
+    border-radius: 10px; /* Redondea las esquinas del contenido del modal. */
+    text-align: center; /* Centra el texto dentro del contenido del modal. */
+    color: white; /* Establece el color del texto en blanco. */
+  }
+  
+  .imagen-telefono{
+    width: 4rem;
+  }
+  
+  @media(min-width: 889px){
+    .imagen-telefono{
+      display: none;
+    }
+  }
+  
+  
+  .close-btn1 {
+    position: absolute; /* Posiciona el botón de cerrar absolutamente dentro del modal. */
+    top: 10px; /* Coloca el botón 10 píxeles desde la parte superior del modal. */
+    right: 10px; /* Coloca el botón 10 píxeles desde el lado derecho del modal. */
+    font-size: 24px; /* Establece el tamaño de fuente del botón de cerrar en 24 píxeles. */
+    cursor: pointer; /* Cambia el cursor a una mano al pasar sobre el botón, indicando que es clickeable. */
+    color: white; /* Establece el color del texto del botón de cerrar en blanco. */
+  }
+  
+  
+  .drumkit{
+    position: relative;
+    height: 40vw;
+  
+  }
+  /*------------------Estilo común para todos los tambores.------------------*/
+  .drumkit div {
+  /*--------------------------------------------------*/
+    position:absolute;
+    border-radius: 50%;
+    font-size: 2vw;
+    font-weight: 600;
+    /*La propiedad letter-spacing en CSS se utiliza para controlar el espacio entre las letras de un texto. Específicamente, define la cantidad de espacio adicional que se debe aplicar entre cada carácter en un texto.*/
+    letter-spacing: 2px;
+    /*------------------------------------------------------------------------------------------------------------*/
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, .5);
+    user-select: none;
+  
+  }
+  
+  
+  /*after sirve para agregar contenido despues despues de un contenido de un elemento */
+  .drumkit > div::after{
+  /*-----------------------------------------------------------------------------*/
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+  
+  }
+  
+  .drumkit > div,
+  .drumkit > div::after{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  
+  /*kick drums*/
+  .kick{
+    background-image: radial-gradient(#444, #111);
+    width: 17vw;
+    height: 17vw;
+    border: 5px #a26c43 solid;
+    bottom: 3em;
+  
+  }
+  
+  .drumkit .kick::after{
+    content: "W";
+    background-color: #505050;
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    z-index: 0;
+    color: #fff;
+  
+  }
+  
+  .drumkit .kick-r::after{
+    content: "R";
+  
+  
+  }
+  
+  
+  .kick-1{
+    left: calc(50% - 20vw);
+  
+  }
+  
+  
+  .kick-r{
+    right: calc(50% - 20vw);
+  
+  }
+  
+  .snare{
+    bottom: 15vw;
+    left: calc(50% - 6vw);
+    width: 12vw;
+    height: 12vw;
+    background-image: linear-gradient(
+      #7c7c7c 0%,
+      #eee 50%,
+      #eee 60%,
+      #ccc 70% );
+      z-index: 1;
+  }
+  
+  .snare::after{
+    border: 2px #111 solid;
+    width: 95%;
+    height: 95%;
+    background-color: #dfdfdf;
+    z-index: -1;
+  
+  }
+  .drumkit .snare::after{
+    content: "E";
+  }
+  
+  .tom {
+    border: 4px #ffab6b solid;
+    background-color: rgba(255, 255, 255, 0.4);
+    z-index: 2;
+  
+  }
+  
+  .tom::after{
+    width: 50%;
+    height: 50%;
+    background-color: rgba(0, 0, 0, .5);
+  
+  }
+  /*------------------------------tom1-----------*/
+  .drumkit .tom1::after{
+    content: "Y";
+  
+  }
+  
+  .tom1{
+    width: 10vw;
+    height: 10vw;
+    bottom: 11.5em;
+    left: calc(50% - 20vw);
+  
+  }
+  /*---------------------------------------------*/
+  
+  /*--------------------tom2-------------------*/
+  
+  .drumkit .tom2::after{
+    content: "U";
+  
+  }
+  
+  .tom2{
+    width: 12vw;
+    height: 12vw;
+    bottom: 13em;
+    left: calc(50% - 9.8vw);
+  
+  }
+  /*---------------------------------------------*/
+  
+  /*--------------------tom3-------------------*/
+  .drumkit .tom3::after{
+    content: "I";
+  
+  }
+  
+  .tom3{
+    width: 14vw;
+    height: 14vw;
+    bottom: 12em;
+    left: calc(50% + 3vw);
+  
+  }
+  
+  /*--------------------------------------------*/
+  
+  .cymbal{
+    background-color: #a46944;
+    background-image: radial-gradient(
+      circle,
+      #000 0,
+      #000 2%,
+      rgba(50, 30, 21, 0.75) 0,
+      rgba(30, 50, 21, 0.75) 24%,
+      rgba(255, 255, 255, 0) 24%),
+      conic-gradient(
+        rgba(255, 255, 255, 0.45) 0,
+        rgba(255, 255, 255, 0.15) 5%,
+        rgba(255, 255, 255, 0.75) 18%,
+        rgba(255, 255, 255, 0.35) 34%,
+        rgba(255, 255, 255, 0.73) 42%,
+        rgba(255, 255, 255, 0.45) 46%,
+        rgba(255, 255, 255, 0.15) 56%,
+        rgba(255, 255, 255, 0.45) 64%,
+        rgba(255, 255, 255, 0.75) 72%,
+        rgba(255, 255, 255, 0.15) 81%,
+        rgba(255, 255, 255, 0.3) 84%,
+        rgba(255, 255, 255, 0.75) 90%,
+        rgba(255, 255, 255, 0.75) 95%,
+        rgba(255, 255, 255, 0.45) 98%,
+        rgba(255, 255, 255, 0.5) 100%);
+    background-blend-mode: overlay;
+    z-index: 3;
+  
+  }
+  
+  .cymbal::after{
+    width: 5%;
+    height: 5%;
+    background-color: #3a3939;
+    border: 3px #000 solid;
+    
+  }
+  /*------------------plato1-------------------*/
+  .drumkit .hithat::after{
+    content: "T";
+  
+  }
+  
+  .hithat {
+    width: 13vw;
+    height: 13vw;
+    bottom: 4em;
+    left: calc(50% + 18vw);
+  
+  }
+  
+  /*----------------------------------------*/
+  
+  
+  /*------------------plato2---------------------*/
+  .drumkit .crash1::after{
+    content: "O";
+  
+  }
+  
+  .crash1{
+    width: 14vw;
+    height: 14vw;
+    bottom: 10.8em;
+    left: calc(50% + 18vw);
+  
+  }
+  
+  /*-----------------------------------------------*/
+  
+  /*--------------------------plato3----------------*/
+  .drumkit .crash2::after{
+    content: "Q";
+  
+  }
+  
+  .crash2{
+    width: 14vw;
+    height: 14vw;
+    bottom: 7em;
+    left:  calc(50% - 32vw);
+  
+  }
+  
+  /*-----------------------------------------------*/
+  
+  .drum-active{
+    opacity: 0.5;
+    
+  }
+  
+  
+  
+  
+  /*---------------------------------------------------------------------------*/

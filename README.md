@@ -1,101 +1,106 @@
-# DING DOM
+# DING DOM 🎼
 
-## Descripción
+## Descripción 🔉 
+DING DOM es una aplicación web *interactiva* para una escuela de música online, desarrollada por nuestro equipo para permitir a los estudiantes practicar de forma didáctica con instrumentos virtuales. En esta web, los usuarios pueden tocar instrumentos musicales *(piano, batería y guitarra)* usando el teclado o el ratón, haciendo clic en las partes correspondientes o presionando las teclas asignadas, creando una experiencia inmersiva y divertida.
 
-Trabajaremos en crear una web para  una escuela de música online, con el plus de que los usuarios van a poder practicar con algunos de los instrumentos porque estos van a reproducir sonidos con click o con pulsaciones de teclado. La Escuela de música quiere ver las ofertas de diferentes grupos de desarrolladores para ver con cuál decide quedarse.
+## Contexto del Proyecto 🎹
 
-## Contexto del proyecto
+Dado el auge de la educación online, DING DOM busca facilitar el aprendizaje musical en una plataforma digital, permitiendo a los usuarios practicar desde cualquier lugar. Nos propusimos crear un espacio que no solo ofreciera sonidos de instrumentos, sino también una experiencia interactiva atractiva que transmita la pasión por la música y el aprendizaje.
 
-La tecnología ha permitido que se puedan migrar a la virtualidad muchas de las actividades que eran estrictamente presenciales, entre esas la educación, y en este caso puntual, las escuelas de música.
+## Proceso de Desarrollo 🎤
+Para gestionar este proyecto, seguimos un enfoque ágil utilizando *Scrum y Kanban*. Desarrollamos el proyecto en 2 sprints de una semana cada uno, utilizando *GitHub Classroom* como repositorio y entorno de colaboración. La organización del flujo de trabajo se llevó a cabo con *GitFlow*, permitiéndonos integrar código de manera eficiente y mantener la estructura organizada.
 
-Desarrolla una aplicación web para la escuela de música "**DING DOM**", en la que los usuarios pueden acceder al instrumento de su preferencia y practicar en él de forma didáctica.
-El diseño de la web queda a criterio de el equipo de desarrollo, aunque cabe aclarar que en los requerimientos de la escuela está la creatividad como punto importante a tener en cuenta.
+ 🚀 La primera fase de desarrollo se centró en la creación de las páginas principales, estableciendo la estructura de navegación y asegurándonos de que la aplicación fuera completamente responsive y adaptativa a diferentes dispositivos. Trabajamos en las funcionalidades del primer instrumento, incluyendo la reproducción de sonidos y las animaciones, para garantizar una experiencia fluida e interactiva. 
+ 🚀 En la segunda fase de desarrollo arreglamos los problemas que teníamos, desarollanos nuevas maneras de trabajar para ser más activos. Mejoramos interfaz y creamos dos nuevos instrumentos.
 
-### Requerimientos funcionales obligatorios
-1. La aplicación debe ofrecer tres instrumentos como minímo a elegir entre: **piano**, **batería**, **guitarra** y **bajo**.
-2. Los sonidos deben estar en el orden correcto y corresponder con las teclas del piano o las cuerdas de la guitarra y el bajo. Asimismo, deben coincidir con las distintas partes de la batería.
-3. La aplicación DEBE constar de las siguientes páginas: home, instrumentos y about us.
-4. La home DEBE mostrar una pequeña presentación del equipo y una galería de los instrumentos.
-5. La página de instrumentos DEBE mostrar los instrumentos que se van a utilizar para practicar.
-6. La página de about us se DEBE mostrar una imagen de las integrantes del grupo como si fuesen artistas, junto a una breve descripción.
-7. La barra de navegación DEBE mostrar un menú con las opciones de home, instrumentos y about us. Debe estar accesible siempre.
-8. La aplicación debe tener un diseño agradable, alusivo a la educación y a la música.
-9. Cada instrumento se DEBE poder tocar con el mouse.
-10. Cada instrumento se DEBE poder tocar con el teclado.
-11. Se DEBE poder tocar de manera repetida y cuantas veces quiera el usuario.
-12. El sonido de una parte del instrumento DEBE poder sonar a la par con las demás partes (Teclas para el piano, platillos, bombo, redoblante, etc para la batería).
-13. Cuando se toque un elemento del instrumento DEBE mostrar algún movimento ( Ya sea Vibración, movimiento, o el efecto de que se oprime en el caso de las teclas)
+## Características y Funcionalidades
+
+✨ Instrumentos Interactivos: Creamos tres instrumentos (piano, batería y guitarra) que pueden ser tocados mediante clics o pulsaciones en el teclado. 
+Para cada instrumento:
+
+* 🎶**Sonido en Orden:** Los sonidos están mapeados de manera que correspondan a las teclas, cuerdas o partes del instrumento.
+* 🎶**Sonidos Simultáneos:** Permite tocar varias notas o partes del instrumento a la vez, como un verdadero instrumento musical.
+* 🎶**Animaciones:** Al tocar un instrumento, se activa una animación que simula la vibración o el movimiento.
+
+  
+✨  Estructura de Páginas:
+
+* 🎵**Home:** Contiene una introducción al equipo y una galería de imágenes de los instrumentos.
+* 🎵**Instrumentos:** Muestra los instrumentos interactivos para practicar.
+* 🎵**About Us:** Incluye una imagen de nuestro equipo presentado como “artistas” y una breve descripción de cada integrante.
+* 🎵**Diseño Atractivo:** Optamos por una estética amigable y alusiva a la música y la educación, usando una paleta monocromatica y elementos visuales que transmiten creatividad y dinamismo.
+
+✨ **Interactividad Completa:** La interacción con los instrumentos es intuitiva, permitiendo al usuario tocar de manera repetida y sin restricciones, tanto con el ratón como con el teclado.
+
+### Requerimientos Técnicos
+* 🎧 GitFlow como metodología de desarrollo y control de versiones.
+* 🎧 Aplicación completamente responsive, adaptada a móviles, tablets y desktop.
+* 🎧 Uso de frameworks y librerías para la gestión de sonidos y animaciones, lo que facilita una experiencia de usuario fluida.
+* 🎧 Despliegue en producción, accesible para el cliente y usuarios.
+* 🎧 Modalidades Pedagógicas
+* 🎧 Este proyecto fue desarrollado en 2 semanas, divididas en 2 sprints. La fecha de la primera entrega está programada para el 5 de Diciembre. 
+* 🎧 Classroom para asegurar una colaboración continua y eficiente.
+
+### Herramientas utilizadas
+* 🎸 VSCODE - edición de codigo.
+* 🎸 Java Script - desarrollar funcionalidades interactivas.
+* 🎸 HTML - estructurar y organizar el contenido.
+* 🎸 CSS - dar estilo y formato a la página.
+* 🎸 GIT / GITHUB - gestionar y rastrear cambios en el código de proyectos, trabajar en ramas y equipo.
+* 🎸 FIGMA - App para que podamos hacer el diseño de la pag tanto en desktop como el el mobil.
+* 🎸 IA - para información adiconal.
+
+### Instrucciones para instalación local.
+
+**Requisitos previos**
+* VSCode
+* Navegador con acceso a internet
+
+```
+Clona el repositorio:
+git clone https://github.com/factoriaf5-santacoloma-frontend-ti/ding-dom-digital-world.git
+ *abrir el GoLive*
+Utilizalo con cuidado 🌈
+```
+
+## Demo de la pagína en desktop
+![Captura de pantalla 2024-11-07 140953](https://github.com/user-attachments/assets/cc36737f-305e-47b3-8259-567776085a5a)
+![Captura de pantalla 2024-11-07 141019](https://github.com/user-attachments/assets/05c39b60-673a-47a7-8fc3-6f01a6e959b1)
+
+## Demo de la pagína en mobil
+![Captura de pantalla 2024-11-07 141054](https://github.com/user-attachments/assets/eee42aa3-fedb-4047-ac54-57a0c703641b)
+![Captura de pantalla 2024-11-07 141109](https://github.com/user-attachments/assets/e74a6137-8920-43d3-80cd-8b1e5f9f6cdd)
 
 
-### Requerimientos técnicos
+## Nuestro incríble equipo:
+* 🐺 Jorge Bastorí
+* 🐴 Hassan Isse
+* 🐝 Lola Borges
+* 🐧 Luisa Moreno
+* 🐱 Jiale
+* 🐨 Juan Diego
+* 🐉 Harshdeep Singh
+* 🐣 Faryal Chaudhary
+ 
 
-- Utilizar Scrum & Kanban para desarrollar el proyecto.
-- Utilizar GitFlow para el desarrollo del código.
-- La aplicación debe ser responsive y adaptable a dispositivos de distinto tamaño.
-- Si así lo decidís, podéis usar frameworks o librerías para el desarrollo, incluidas la gestión del sonido y las animaciones.
-- Se debe desplegar en producción
-
-
-## Modalidades Pedagógicas
-
-- Se trabajará durante 2 semanas, realizándose 2 sprints.
-- La fecha de presentación y entrega es el 5 de Diciembre.
-- Se trabajará mediante GitHub Classroom.
-
-## Modalidades de Evaluación
-
-- La evaluación se realizará mediante comentarios orales el día de la presentación.
-- Se hará también una dinámica de autoevaluación.
-
-### Bonus Track
-1. Crear el apartado **Jukebox**, donde el usuario pueda seleccionar una canción y elegir los tres instrumentos para ser interpretada.
-2. Crear un apartado con documentación sobre primeros pasos para tocar los instrumentos.
-3. Incluir videos tutoriales de cómo tocar un instrumento con canciones sencillas y notas de cada instrumento para tocar en vivo.
-
-### Entregables
-- Repositorio de classroom con el fichero README.md explicando:
-  - Descripción del proyecto
-  - Link del despliegue
-  - Demo (Figma)
-  - Herramientas utilizadas
-  - Cómo instalar el proyecto en el ordenador (local)
-  - Autor@s
-- Presentación del proyecto
+## Nuestros increíbles instructores
+* 🐪 Raúl Garcia
+* 🐴 Lucía Silva
 
 
-### ¿Qué competencias se evalúan?
-- Maquetar una web nivel 2
-- Desarrollar una interfaz de usuario dinámica nivel 2
-- Crear una interfaz de usuario web estática y adaptable nivel 1
+Maquetamos una Web Nivel 2
+Realizamos la maquetación en base a un diseño establecido y respetando la carta gráfica elegida. Adaptamos la interfaz para una experiencia óptima en distintos dispositivos, justificando cada elección de diseño en términos de usabilidad y ergonomía.
 
-### ¿Qué implica este nivel?
+Desarrollamos una Interfaz de Usuario Dinámica Nivel 2
+Incluimos funcionalidades dinámicas complejas, como el mapeo de sonidos y la animación de instrumentos, así como la integración de las páginas de manera interactiva.
 
-#### Maquetar una web nivel 2
-Partiendo de una herramienta de maquetación determinada, reproducir una maquetación hecha con la misma herramienta. Describir los elementos de la carta gráfica utilizada, así como los elementos de seguridad previstos. Formalizar la secuencia de interfases tomando como base el modelo proporcionado. Demostrar que la maqueta puede adaptarse a diferentes dispositivos móviles. Ser capaz de justificar la elección de la ergonomía para una buena experiencia de usuario.
+Creamos una Interfaz de Usuario Web Estática y Adaptable Nivel 1
+Realizamos ajustes en el contenido, estructura y diseño de la interfaz para mejorar la experiencia del usuario, incluyendo cambios en fuentes, colores y disposición de elementos.
 
-Justificar el vínculo entre las interfaces creadas y los casos de uso o historias de usuario. Añadir nuevas interfaces que correspondan a otros casos de uso respetando los criterios anteriores de carta gráfica, seguridad, ergonomía y adaptabilidad.
+*Este proyecto DING DOM representa una propuesta creativa y funcional para el aprendizaje musical online, desarrollada con un enfoque en la interactividad y la adaptabilidad para diferentes usuarios y dispositivos. Nos enorgullece presentar una plataforma educativa única en su tipo, que combina tecnología y pasión por la música para enriquecer la experiencia de aprendizaje.*
 
-#### Desarrollar una interfaz de usuario dinámica nivel 2
-Partiendo de la descripción de necesidades y de una página web dinámica existente (realizada o no por el alumno):
 
-- Hacer cambios importantes (añadiendo campos o procesamientos en el lado del cliente),
 
-- Añadir páginas dinámicas,
 
-- Añadir pruebas de procesamientos del lado del cliente que no habrían sido tomados en cuenta hasta entonces.
-
-#### Crear una interfaz de usuario web estática y adaptable nivel 1
-Partiendo de una descripción de necesidades (maquetación) y de una interfaz de usuario estática existente:
-
-- Adaptar el contenido de la interfaz (cambiar el texto,...)
-
-- Hacer pequeños cambios en la estructura de la interfaz (añado un título, un párrafo,...)
-
-- Adaptar el diseño de la interfaz (cambio el color de un título, cambio la fuente,...)
-
-### Recursos
-- [Página de inspiración 1](https://www.sessiontown.com/es)
-- [Página de inspiración 2](https://www.musicca.com/es/herramientas)
-- [Librería Keypress](https://dmauro.github.io/Keypress/)
 
 
